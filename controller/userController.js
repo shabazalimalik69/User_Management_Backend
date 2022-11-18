@@ -2,10 +2,10 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../model/userModel");
 
-const access_key = process.env.access_secret_key;
-const refresh_key = process.env.refresh_secret_key;
+const access_key = process.env.ACCESS_SECRET_KEY;
+const refresh_key = process.env.REFRESH_SECRET_KEY;
 
-
+console.log(access_key,refresh_key)
 
 
 const SignUp = async(req,res)=>{
